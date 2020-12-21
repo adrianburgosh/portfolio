@@ -1,11 +1,13 @@
 import React from "react";
 import { AppBar, Box, Link, Toolbar, Typography } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
-import MenuItem from "./MenuItem";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
+	},
+	menuItem: {
+		marginRight: theme.spacing(3),
 	},
 	title: {
 		marginRight: theme.spacing(3),
@@ -22,8 +24,12 @@ export default function MenuBar(props) {
 						{props.companyName}
 					</Typography>
 					<Typography className={classes.root}>
-						<MenuItem href="#">Inicio</MenuItem>
-						<MenuItem href="#">Sobre nosotros</MenuItem>
+						<Link href="#" color="inherit" className={classes.menuItem}>
+							Inicio
+						</Link>
+						<Link href="#" color="inherit" className={classes.menuItem}>
+							Sobre nosotros
+						</Link>
 					</Typography>
 				</Toolbar>
 			</AppBar>
