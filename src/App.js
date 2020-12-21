@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Container	 } from "@material-ui/core";
 import MainContent from "./MainContent";
 
-import MenuBar from "./componets/MenuBar";
+import MenuBar from "./componets/MenuBar/MenuBar";
 
 export default function App() {
 
